@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+
+{%block title%} Kalkulator Simpel {%endblock%}
+
+{%block content%}
+
+    <h2>Kalkulator Sederhana</h2>
+
+    <form method="POST" action="{{url_for('main.calc')}}">
+        <input type="number" step="any" name="num1" placeholder="masukkan angka ...">
+        <select name="operation">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">x</option>
+            <option value="div">÷</option>
+        </select>
+        <input type="number" step="any" name="num2" placeholder="masukkan angka ...".>
+        <button type="submit">Hitung</button>
+
+    </form>
+
+    {%if result is not none%}
+        <h3>Hasil: {{result}}</h3>
+    {%endif%}
+{%endblock%}

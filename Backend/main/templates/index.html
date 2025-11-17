@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Flask App{% endblock %}
+
+{% block content %}
+    <h2>Selamat Datang di Aplikasi Flask!</h2>
+    <p>Hai {{ name if name else 'pengunjung' }} 👋</p>
+
+    <p>Ini adalah proyek belajar Flask dengan struktur modular menggunakan <strong>Blueprint</strong>.</p>
+    {% endblock %}
