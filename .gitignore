@@ -1,16 +1,9 @@
-# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-env/
 venv/
-app.db
-
-# Node
+env/
+*.pyc
 node_modules/
 build/
-
-# Environment
 .env
 *.env
+app.db
